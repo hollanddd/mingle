@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mingle</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class='container-fluid'>
+		<%= yield %>
+		<div class='row-fluid' id='bottom'>
+			<div class='span4' id='twitter_feed'>
+				<h4>Tweets</h4><br />
+				<%- @tweets.each do |tweet| %>
+				<%= display_content_with_links(tweet).html_safe %>
+				<hr />
+				<% end %>
+			</div>
+			<div class='span4' id='for'>
+				for use <a href='http://twitter.com/windycityrails'>@windycityrails</a><br />
+				<img src='/assets/wcrails.png' alt='windy city rails' height='102' width='102' />
+			</div>
+			<div class='span4' id='about'>
+				made by <a href='http://twitter.com/putshelloworld'>@putshelloworld</a>
+			</div>
+		</div>
+	</div><!-- End Container -->
+<%= javascript_include_tag "application" %>
+</body>
+</html>

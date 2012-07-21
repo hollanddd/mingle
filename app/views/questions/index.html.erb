@@ -1,0 +1,24 @@
+</div>
+<div id='header'>
+	<h1>Start A Conversation</h1>
+</div>
+<div class='container-fluid'>
+<div class='row-fluid'>
+	</div><div class='row-fluid'>
+	<div class='span5'>
+		<div id='random_question'>
+		  <a href='/'><%=h(@random_question.body) %></a>
+		</div>
+	</div>
+	<div class='span2' id='triangle'>
+		<h3>Did someone just ask you a great question? Consider adding it to the list.</h3>
+	</div>
+	<div class='span5'>
+		<%= form_for @question, :url => {:action => :index}, :method => 'post', :html => {:class => 'form-inline'} do |f| %>
+			<%= f.text_area :body %>
+			<br />
+			<br />
+			<%= f.submit 'Add an Open Ended Question', :class => 'btn btn-danger btn-large', :id => 'q_button' %>
+		<% end %>
+	</div>
+</div>

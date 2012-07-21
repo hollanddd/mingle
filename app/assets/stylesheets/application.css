@@ -1,0 +1,74 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+#bottom{
+	padding: 0 .5em;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	body{
+		padding: 0 0 0 0 !important;
+	}
+	#random_question{
+		padding:0 .5em 0 .5em;
+		margin-top:1em;
+	}
+	#new_question{
+		padding: 0 1em;
+	}
+	#new_question textarea{
+		width:97%;
+		
+	}
+	#new_question .btn{
+		width:75%;
+	}
+	#for img{
+		padding:.5em 0 .5em 0;
+	}
+	#header{
+		position:fixed;
+		background:#fff;
+	}
+	#bottom{
+		max-width:435px !important;
+	}
+	#bottom, #for, #about{
+		margin-top:1em;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	#random_question{
+		padding:.5em 0 .5em 0;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	#random_question{
+		padding:.5em 0 .5em 0;
+	}
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	#random_question{
+		padding:.5em 0 .5em 0;
+	}
+	#triangle, #new_question{
+		margin-top:2em;
+	}
+}

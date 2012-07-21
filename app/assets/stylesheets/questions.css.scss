@@ -1,0 +1,39 @@
+// Place all the styles related to the Questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+	text-align:center !important;
+}
+#header{
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+	box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+	width:100%;
+	h1{
+		color:#4d4d4c;
+	}
+}
+#random_question{
+	text-align:center;
+	font-size:3em;
+	line-height:1.5em;
+	a{
+		color:#b30000;
+	}
+	a:hover{
+		color:#4d4d4c;
+		text-decoration:none;
+	}
+}
+#triangle, #new_question{
+	margin-top:2em;
+	color:#4d4d4c;
+}
+#bottom{
+	a{
+		color:#b30000;
+	}
+	a:hover{
+		text-decoration:underline;
+	}
+}
